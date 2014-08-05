@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Playground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <header class="header">
+        <p class="title">JSPlayground</p>
+        <section class="tab btns-tab">
+            <span class="btn run">Run</span>
+            <span class="btn reset">Reset</span>
+        </section>
+    </header>
+    <section class="container">
+        <section class="grid clearfix">
+            <section class="column left options">
+                <p class="title">Select the options for your run time</p>
+                <section class="js-options">
+                    <label>JavaScript Version</label>
+                    <br/>
+                    <select class="js-version" name="js-version">
+                        <option value="1.5">JavaScript 1.5</option>
+                        <option value="1.6">JavaScript 1.6</option>
+                        <option value="1.7">JavaScript 1.7</option>
+                    </select>
+                </section>
+            </section>
+            <section class="column mid options">
+                <section class="row html-content">
+                    <pre id="html-editor"></pre>
+                </section>
+                <section class="row js-content">
+                    <pre id="js-editor">/*JavaScript*/</pre>
+                </section>
+            </section>
+            <section class="column right options">
+                <section class="row output-html">
+                    <iframe src=""></iframe>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- This stuff is never making it out into the pub domain, so why bother with CDNs -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/ace-editor/ace.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--Sorry no GA-->
+</body>
+</html>
